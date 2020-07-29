@@ -8,7 +8,9 @@ import Colors from '../constants/Colors';
 import EconomyScreen from '../screens/EconomyScreen';
 
 const CrisisAppNaviator = (props) => {
+
     const Stack = createStackNavigator();
+    
     return(
     <Stack.Navigator screenOptions={{headerStyle: {backgroundColor: Colors.primaryColor}, headerTintColor: 'white', headerTitle: 'CoVIDExpresso'}}>
         <Stack.Screen name="Home" component={HomeScreen} />
